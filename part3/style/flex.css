@@ -1,0 +1,47 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    /* 
+    align-items로 서브축 중앙정렬이 됐는데 안보인다면?
+    부모는 자식의 높이를 가지기 때문에 body랑 자식의 높이가 똑같아서
+    티가 안나는거다. 아래처럼 height를 크게 주고 확인해볼수 있다 */
+    height: 100vh;
+}
+
+.container {
+    width: 600px;
+    height: 600px;
+    border: 1px solid black;
+
+    display: flex;
+    
+    /* 메인축 정렬 설정(시작, 끝, 가운데 등등) */
+    justify-content: space-between;
+
+    /* 서브축 정렬 설정 */
+    align-items: center;
+
+    /* 개행. 얘를 안하면 공간이 부족할 경우 요소들끼리 크기가 줄어든다 */
+    flex-wrap: wrap;
+
+    /* 얘는 컨텐츠끼리 서브축을 정렬함 */
+    align-content: space-between;
+
+
+    /* flex 선언이 돼 있을떄 오브젝트간의 간격만 설정 (양끝엔 없음) */
+    gap : 10px;
+
+    > div {
+        width: 150px;
+        height: 150px;
+        background-color: dodgerblue;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+

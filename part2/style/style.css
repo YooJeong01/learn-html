@@ -1,0 +1,61 @@
+.list {
+    background-color: hotpink;
+}
+
+/* A B : 영역의 '안'에있는 대상에게만 적용하기 */
+.list li {
+    background-color: dodgerblue;
+}
+
+/* A.B : 영역과 함께 가지고 있는 대상에게만 적용하기 */
+/* 11점 */
+li.menu {
+    background-color: orange;
+}
+
+/* 20점 */
+.list .menu{
+    background-color: red;
+}
+
+/* > : 친자식 선택하기(손주말고) */
+.list > .menu{
+    background-color: goldenrod;
+}
+
+/* :nth-child  : 간단하게 순서로 잡을수도 있다 */
+/* 아래 코드는 > + :nth-child 이기 때문에 친자식이 잡히는데, */
+/* > 가 없으면 손주의 3번째까지 잡힌다 */
+.list > li:nth-child(3) {
+    background-color: rgb(218, 34, 206);
+}
+
+.list > li:nth-last-child {
+    background-color: #fff;
+}
+
+/* even, odd 등 다양하게 잡을 수있다 */
+.list > li:nth-child(2n){
+    background-color: greenyellow;
+}
+
+/* CSS nesting : 하위 종속*/
+.list {
+    /* &는 자기자신. 즉 부모가 된다(=.list) */
+    & >.box{
+        background-color: black;
+    }
+    &:hover {
+
+    }
+
+    > .menu{
+
+    }
+}
+
+/* 다중선택자 : 사용할땐 이렇게 여러줄로 해주기(한줄x) */
+/* .box,
+.menu {
+
+} */

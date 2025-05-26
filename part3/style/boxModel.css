@@ -1,0 +1,28 @@
+div {
+    width: 200px;
+    height: 200px;
+}
+
+.box1 {
+    background: red;
+    /* margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px; */
+    /* margin: 10px; */
+}
+.box2 {
+    background: dodgerblue;
+    padding: 10px;
+    margin-inline-start: 10px;
+}
+.box3 {
+    background: orange;
+    border:  10px solid red;
+    border-radius: 10px 20px 30px 40px;
+}
+.box4 {
+    background: greenyellow;
+    border : 5px solid black;
+    box-sizing: border-box;
+}

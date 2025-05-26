@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>프로그래머스</title>
+</head>
+<body>
+    <!-- 시맨틱 태그 -->
+     <!-- 시맨틱 태그는 보통 블럭 태그임 -->
+    <header>header입니다</header>
+    <!-- main태그는 딱 한번만 가능(단, hidden 속성 사용시는 예외) -->
+    <main>
+        <section>
+            <!-- section 안에는 하나 이상의 h@ 태그가 들어와야함
+            section이 무슨 역할을 하는지 알려줘야하기 때문 -->
+            <h4>1</h4>
+            <h4>1</h4>
+            <h4>1</h4>
+            <h4>1</h4>
+        </section>
+
+        <aside>section과 비슷한 기능, 광고 담을때 주사용</aside>
+
+        <!-- li를 쓰려면 무조건 부모가 ol이나 ul이어야함 -->
+        <nav>
+            <ul>
+                <h1>프로그래머스</h1>
+                <h2>프로그래머스</h2>
+                <h3>프로그래머스</h3>
+                <h4>프로그래머스</h4>
+                <h5>프로그래머스</h5>
+                <h6>프로그래머스</h6>
+            </ul>
+        </nav>
+
+
+        <em>이탤릭</em>
+        <strong>강조</strong>
+        <b>강조</b>
+        <mark>하이라이팅</mark>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, magni. Corrupti modi aliquam architecto sequi excepturi suscipit, obcaecati iusto enim.</p>
+
+        <!-- data-uz : 커스텀 속성 사용시 이렇게 하기로 하자 규약 -->
+        <a href="#" title="네이버" data-uz>링크</a>
+
+        <!-- 구분선 -->
+        <hr />
+
+        <!-- 개행 -->
+        <br />
+
+        <img src="./visual.jpg" alt="기웃기웃" />
+        <!-- 유튜브 -> 공유하기 -> 퍼가기 -->
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/wHtJyEIQnMQ?si=GwtjaIpoVvcizJ6W" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>    
+
+        <figure>
+            <!-- tabindex : 보이스오버 포커스에 탐색이 되도록 만들어줌 -->
+            <img tabindex="0" src="./visual2.jpg" alt="" />
+            <figcaption>alt대신 이미지에 대한 내용 설명</figcaption>
+        </figure>
+
+    </main>
+
+    <footer>footer입니다</footer>
+
+</body>
+</html>

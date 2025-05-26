@@ -1,0 +1,41 @@
+/* 이렇게 상속으로 처리해줘도 됨 */
+/* a {
+    
+    color: inherit; 
+} */
+
+.menu :nth-child(1) > a {
+    font-weight: bold;
+}
+
+.menu :nth-child(3) > a {
+    color: red;
+}
+
+main {
+    background-color: lightgray;
+}
+
+.box1 {
+    border: 1px solid blue;
+    background-color: yellow;
+}
+
+ul > .item2{
+    /* 아래처럼 scale을 이용해서 키울 수 있지만, 영역 자체가 커지기 때문에 간격 조절 필요하다 */
+    transform: scale();
+    font-size: large;
+}
+
+ul > .item3{
+    text-decoration: underline;
+}
+
+ul > .item3:hover{
+    background-color: #fff;
+}
+
+/* 아래처럼 부모에 행동을 취했을때 자식에 변화가 일어나는 구조가 좋다 */
+footer:hover > p {
+    background: #a18080;
+}
