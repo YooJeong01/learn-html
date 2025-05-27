@@ -27,7 +27,7 @@ body {
     flex-wrap: wrap;
 
     /* 얘는 컨텐츠끼리 서브축을 정렬함 */
-    align-content: space-between;
+    /* align-content: space-between; */
 
 
     /* flex 선언이 돼 있을떄 오브젝트간의 간격만 설정 (양끝엔 없음) */
@@ -37,10 +37,20 @@ body {
         width: 150px;
         height: 150px;
         background-color: dodgerblue;
+        /* flex-basis: 200px;
+        flex-grow: 1;
+        flex-shrink: 1; */
 
-        display: flex;
+        flex : 1 1 200px;
+
+        &:nth-child(2) {
+            flex: 2;
+            order : -1;
+        }
+
+        /* display: flex;
         justify-content: center;
-        align-items: center;
+        align-items: center; */
     }
 }
 
